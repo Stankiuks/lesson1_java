@@ -1,5 +1,5 @@
-var aukstis =15;
-var plotis =10;
+var aukstis =parseInt(prompt('iveskite auksti'));
+var plotis =parseInt(prompt('iveskite ploti'));
 
 function gautiPerimetra (plotis, aukstis) {
     var perimetras;
@@ -23,14 +23,14 @@ function gautiIstrizaine (plotis, aukstis) {
 var perimetras =gautiPerimetra(plotis, aukstis);
 //document.writeln('staciakampio perimetras'+ perimetras)
 console.log('staciakampio perimetras'+ perimetras);
-document.getElementById('perimetras').innerText = perimetras;
+document.querySelector('#perimetras').innerText = perimetras;
 
 var plotas = gautiPlota(plotis, aukstis);
 //document.writeln('staciakampio plotas'+ plotas)
 console.log('Staciakampio plotas' + plotas);
-document.getElementById('plotas').innerText = plotas;
+document.querySelector('#plotas').innerText = plotas;
 
 var istrizaine = gautiIstrizaine(plotis, aukstis)
 //document.writeln('staciakampio istrizaine'+ istrizaine)
 console.log('staciakampio istrizaine' + istrizaine);
-document.getElementById('istrizaine').innerText = istrizaine;
+document.querySelector('#istrizaine').innerText = istrizaine;
