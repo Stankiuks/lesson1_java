@@ -4,19 +4,19 @@ var plotis =10;
 function gautiPerimetra (plotis, aukstis) {
     var perimetras;
     perimetras = (plotis + aukstis) *2;
-    return perimetras
+    return perimetras;
 }
 
 function gautiPlota (plotis, aukstis) {
     var plotas;
     plotas = plotis * aukstis;
-    return plotas
+    return plotas;
 }
 
 function gautiIstrizaine (plotis, aukstis) {
     var istrizaine;
-    istrizaine = Math.sqrt(Math.pow (aukstis, 2) + Math.pow(plotis, 2));
-    return istrizaine
+    istrizaine = Math.sqrt(Math.pow (aukstis, 2) + Math.pow(plotis, 2)).toFixed(2);
+    return istrizaine;
 }
 
 
